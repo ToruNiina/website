@@ -14,7 +14,11 @@ jobs:
         run: |
             brew install hugo
       - name: Build webpage
-        run: hugo --minify
+        run: |
+            cd public
+            git checkout master
+            cd -
+            hugo --minify
       - name: publish
         env:
           USER_GITHUB_PAGES_TOKEN: ${{ secrets.USER_GITHUB_PAGES_TOKEN }}
@@ -22,7 +26,6 @@ jobs:
             git config --global user.name  "ToruNiina"
             git config --global user.email "niina.toru.68u@gmail.com"
             cd public
-            git checkout master
             git add .
             git commit -m "auto update"
             git push --force https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
