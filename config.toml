@@ -1,3 +1,129 @@
-baseURL = "http://example.org/"
+baseURL = "https://toruniina.github.io/"
+defaultContentLanguage = ["en", "ja"]
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Toru Niina"
+theme = "LoveIt"
+
+[languages.en]
+weight = 1
+languageCode = "en-us"
+languageName = 'English'
+hasCJKLanguage = false
+
+[languages.ja]
+weight = 2
+languageCode = "ja"
+languageName = '日本語'
+hasCJKLanguage = true
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+
+[params.home]
+rss = 10
+[params.home.profile]
+enable = true
+avatarURL = "/images/avatar.png"
+subtitle = "Toru Niina's web site"
+typeit = false
+social = true
+[params.home.posts]
+enable = true
+pagenate = 6
+defaultHiddenFromHomePage = false
+[params.page.codes]
+maxShownLines = 65535
+
+[params.social]
+  Email = "niina.toru.68u@gmail.com"
+
+[params.social.GitHub]
+  weight = 1
+  id = "ToruNiina"
+  icon = {class = "fab fa-github"}
+
+[params.social.Twitter]
+  weight = 2
+  id = "ToruNiina"
+
+[params.social.Hatena]
+  weight = 3
+  id = "in-neuro.hatenablog.com"
+  prefix = "https://"
+  title = "Hatena Blog"
+  icon = {class = "fas fa-pen-nib"}
+
+[params.social.Qiita]
+  weight = 4
+  prefix = "https://qiita.com/"
+  id = "niina"
+  title = "Qiita"
+  icon = {simpleicons = "Qiita"}
+
+[params.footer]
+  enable = true
+  custom = ''
+  hugo = true
+  copyright = true
+  author = true
+  # Site creation time
+  since = 2020
+  # license info (HTML format is supported)
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[author]
+  name = "Toru NIINA"
+  email = "niina.toru.68u@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "Biography"
+    pre = '<i class="fas fa-user"></i>'
+    post = ""
+    name = "Biography"
+    url = "/biography/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "Publications"
+    pre = '<i class="fas fa-book"></i>'
+    post = ""
+    name = "Publications"
+    url = "/publications/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "Projects"
+    pre = '<i class="fas fa-cubes"></i>'
+    post = ""
+    name = "Projects"
+    url = "/projects/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "Posts"
+    pre = '<i class="fas fa-pen-square"></i>'
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = ""
+    weight = 4
+  [[menu.main]]
+    identifier = "Categories"
+    pre = '<i class="fas fa-folder"></i>'
+    post = ''
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 5
+
+[markup]
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = true
+  lineNumbersInTable = true
+  # false is a necessary configuration
+  # (https://github.com/dillonzq/LoveIt/issues/158)
+  noClasses = false
