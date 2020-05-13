@@ -4,20 +4,17 @@ on: [push]
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: macos-10.15
     steps:
       - name: Checkout
         uses: actions/checkout@v1
         with:
           submodules: recursive
-          token: ${{ secrets.ACCESS_TOKEN }}
       - name: Install Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.70.0'
-          extended: true
+        run: |
+            brew install hugo
       - name: Build webpage
-        run: hugo
+        run: hugo --minify
       - name: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
