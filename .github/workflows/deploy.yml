@@ -16,7 +16,7 @@ jobs:
         with:
           hugo-version: '0.70.0'
       - name: Build webpage
-        run: hugo --minify
+        run: hugo
       - name: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
