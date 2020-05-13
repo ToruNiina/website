@@ -17,11 +17,11 @@ jobs:
         run: hugo --minify
       - name: publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER_GITHUB_PAGES_TOKEN: ${{ secrets.USER_GITHUB_PAGES_TOKEN }}
         run: |
             git config --global user.name  "ToruNiina"
             git config --global user.email "niina.toru.68u@gmail.com"
             cd public
             git add .
             git commit -m "auto update"
-            git push https://ToruNiina:${GITHUB_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
+            git push https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
