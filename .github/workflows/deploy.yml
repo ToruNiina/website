@@ -22,6 +22,7 @@ jobs:
             git config --global user.name  "ToruNiina"
             git config --global user.email "niina.toru.68u@gmail.com"
             cd public
+            git checkout master
             git add .
             git commit -m "auto update"
             git push https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
