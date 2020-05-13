@@ -15,8 +15,9 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.70.0'
+          extended: true
       - name: Build webpage
-        run: hugo
+        run: hugo --minify
       - name: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
