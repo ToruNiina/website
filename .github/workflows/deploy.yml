@@ -4,10 +4,10 @@ on: [push]
 
 jobs:
   deploy:
-    runs-on: macos-10.15
+    runs-on: Ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           submodules: true
       - name: Install Hugo
@@ -30,4 +30,4 @@ jobs:
             cd public
             git add .
             git commit -m "auto update"
-            git push --force https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
+            git push https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master

@@ -60,7 +60,7 @@ Define `params.social.XXX.icon.simpleicons` when we use simpleicons.
   prefix = "https://qiita.com/"
   id = "niina"
   title = "Qiita"
-  icon = {simpleicons = "Qiita"}
+  icon = {simpleicons = "qiita"}
 ```
 
 ## Adding GitHub Star/Fork/Watch buttons

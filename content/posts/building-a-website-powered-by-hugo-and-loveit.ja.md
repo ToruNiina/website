@@ -61,7 +61,7 @@ simpleiconsを使う場合は`params.social.XXX.icon.simpleicons`に名前を指
   prefix = "https://qiita.com/"
   id = "niina"
   title = "Qiita"
-  icon = {simpleicons = "Qiita"}
+  icon = {simpleicons = "qiita"}
 ```
 
 ## GitHubのStarボタンを追加

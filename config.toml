@@ -59,7 +59,7 @@ maxShownLines = 65535
   prefix = "https://qiita.com/"
   id = "niina"
   title = "Qiita"
-  icon = {simpleicons = "Qiita"}
+  icon = {simpleicons = "qiita"}
 
 [params.footer]
   enable = true
