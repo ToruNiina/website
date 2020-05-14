@@ -7,7 +7,7 @@ jobs:
     runs-on: Ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           submodules: true
       - name: Install Hugo
@@ -17,17 +17,11 @@ jobs:
           extended: true
       - name: Build webpage
         run: |
-            cd public
-            git checkout master
-            cd -
             hugo --minify
-      - name: publish
-        env:
-          USER_GITHUB_PAGES_TOKEN: ${{ secrets.USER_GITHUB_PAGES_TOKEN }}
-        run: |
-            git config --global user.name  "ToruNiina"
-            git config --global user.email "niina.toru.68u@gmail.com"
-            cd public
-            git add .
-            git commit -m "auto update"
-            git push https://ToruNiina:${USER_GITHUB_PAGES_TOKEN}@github.com/ToruNiina/toruniina.github.io.git master
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.USER_GITHUB_PAGES_TOKEN }}
+          external_repository: ToruNiina/toruniina.github.io
+          publish_branch: master
+          publish_dir: ./public
