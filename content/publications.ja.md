@@ -11,8 +11,8 @@ lightgallery: true
 
 ## 学術論文（査読付き）
 
-- **Molecular dynamics simulation of proton-transfer coupled rotations in ATP synthase FO motor**
-  - Shintaroh Kubo†, **Toru Niina†**, and Shoji Takada († equal contribution). Scientific Reports (in press).
+- [**Molecular dynamics simulation of proton-transfer coupled rotations in ATP synthase FO motor**](https://doi.org/10.1038/s41598-020-65004-1)
+  - Shintaroh Kubo†, **Toru Niina†**, and Shoji Takada († equal contribution). Scientific Reports (2020).
   - bioRxiv: https://doi.org/10.1101/618504
 - [**Flexible Fitting of Biomolecular Structures to Atomic Force Microscopy Images via Biased Molecular Simulations**](https://doi.org/10.1021/acs.jctc.9b00991)
   - **Toru Niina**, Sotaro Fuchigami, and Shoji Takada. JCTC (2020).
