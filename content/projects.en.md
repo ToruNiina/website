@@ -31,6 +31,8 @@ Mjolnir is a molecular dynamics simulation software focusing on coarse-grained s
 
 I am the original designer, implementer and owner of the project.
 
+Some of the features are implemented by [contributors](https://github.com/Mjolnir-MD/Mjolnir/graphs/contributors).
+
 ## [toml11](http://github.com/ToruNiina/toml11)
 
 {{< rawhtml >}}
