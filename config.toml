@@ -20,6 +20,7 @@ hasCJKLanguage = true
   # LoveIt theme version
   version = "0.2.X"
 
+
 [params.home]
 rss = 10
 [params.home.profile]
@@ -32,8 +33,12 @@ social = true
 enable = true
 pagenate = 6
 defaultHiddenFromHomePage = false
+
 [params.page.codes]
 maxShownLines = 65535
+
+[params.page.math]
+enable = true
 
 [params.social]
   Email = "niina.toru.68u@gmail.com"
