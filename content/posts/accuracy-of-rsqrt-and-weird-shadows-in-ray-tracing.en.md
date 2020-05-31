@@ -23,7 +23,7 @@ I've looked into the causes of that a while ago, but this time I'm going to take
 In the 3D CG field, there is a popular optimization technique called [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root).
 It is a fast approximation of \\(1/\sqrt{x}\\) that is computed when we regularize the length of a vector.
 
-Nowadays, most x86_64 CPUs implement `rsqrtss, rsqrtps` instructions that have higher accuracies.
+Nowadays, most x86_64 CPUs implement `rsqrtss` instruction that have higher accuracies.
 By replacing `sqrt` and division with `rsqrtss`, we would gain some speedup.
 
 In Rust, you can call intrinsic functions via `std::arch::x86_64`.
@@ -59,10 +59,10 @@ Actually, the artifacts disappear when I replaced `rsqrtss` by normal division a
 
 ![reflection](images/accuracy-of-rsqrt-and-weird-shadows-in-ray-tracing/reflection.png)
 
-If it overestimates the length of the ray, the position where the ray hits the object becomes distant and would be buried inside the object.
+If a ray tracer overestimates the length of the ray, the position where the ray hits the object becomes distant and would be buried inside the object.
 A ray that starts from the inside of an object never escapes from it unless it is transparent (A).
-That is not distinguishable from the case when the ray does not hit to a light source (B), the pixel would look like a shadow.
-This may make the pixel darker.
+This is not distinguishable from the case when the ray does not hit to a light source (B), so the pixel would look like a shadow.
+It may make the pixel darker.
 
 To test this hypothesis, "numerical errors in `rsqrtss` when calculating the length of rays cause the artifacts", I plotted the numerical error in a similar way as the ray tracing.
 I calculated the length of the rays from the camera to the screen and plotted the relative error in the log scale only when the `rsqrtss` overestimates the length.
