@@ -6,24 +6,24 @@ lastmod: 2020-05-08T18:28:40+09:00
 draft: false
 author: "Toru Niina"
 description: "Publications."
+fontawesome: true
 lightgallery: true
 ---
 
 ## 学術論文（査読付き）
 
-- [**Molecular dynamics simulation of proton-transfer coupled rotations in ATP synthase FO motor**](https://doi.org/10.1038/s41598-020-65004-1)
+:(fas fa-lock-open): : Open Access.
+
+- [**:(fas fa-lock-open): Molecular dynamics simulation of proton-transfer coupled rotations in ATP synthase FO motor**](https://doi.org/10.1038/s41598-020-65004-1)
   - Shintaroh Kubo†, **Toru Niina†**, and Shoji Takada († equal contribution). Scientific Reports (2020).
-  - bioRxiv: https://doi.org/10.1101/618504
-- [**Flexible Fitting of Biomolecular Structures to Atomic Force Microscopy Images via Biased Molecular Simulations**](https://doi.org/10.1021/acs.jctc.9b00991)
+  - :(fas fa-lock-open): bioRxiv: https://doi.org/10.1101/618504
+- [**:(fas fa-lock): Flexible Fitting of Biomolecular Structures to Atomic Force Microscopy Images via Biased Molecular Simulations**](https://doi.org/10.1021/acs.jctc.9b00991)
   - **Toru Niina**, Sotaro Fuchigami, and Shoji Takada. JCTC (2020).
-  - bioRxiv: https://doi.org/10.1101/793901
-- [**Sequence-dependent nucleosome sliding in rotation-coupled and uncoupled modes revealed by molecular simulations**](https://doi.org/10.1371/journal.pcbi.1005880)
-  - **Toru Niina†**, Giovanni B. Brandani†, Cheng Tan, and Shoji Takada († equal contribution). PLoS Computational Biology (2017).
-
-----
-
-- [**DNA sliding in nucleosomes via twist defect propagation revealed by molecular simulations**](https://doi.org/10.1093/nar/gky158)
+  - :(fas fa-lock-open): bioRxiv: https://doi.org/10.1101/793901
+- [**:(fas fa-lock-open): DNA sliding in nucleosomes via twist defect propagation revealed by molecular simulations**](https://doi.org/10.1093/nar/gky158)
   - Giovanni B. Brandani, **Toru Niina**, Cheng Tan, and Shoji Takada. Nucleic Acids Research (2018).
+- [**:(fas fa-lock-open): Sequence-dependent nucleosome sliding in rotation-coupled and uncoupled modes revealed by molecular simulations**](https://doi.org/10.1371/journal.pcbi.1005880)
+  - **Toru Niina†**, Giovanni B. Brandani†, Cheng Tan, and Shoji Takada († equal contribution). PLoS Computational Biology (2017).
 
 ## ソフトウェア
 
