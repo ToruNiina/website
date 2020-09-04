@@ -2,7 +2,6 @@
 weight: 2
 title: "Publications"
 date:    2020-05-08T18:28:40+09:00
-lastmod: 2020-05-08T18:28:40+09:00
 draft: false
 author: "Toru Niina"
 description: "Publications."
@@ -14,8 +13,11 @@ lightgallery: true
 
 :(fas fa-lock-open): : Open Access.
 
+- [**:(fas fa-lock): The Particle Filter Method to Integrate High-Speed Atomic Force Microscopy Measurement with Biomolecular Simulations**](https://doi.org/10.1021/acs.jctc.0c00234)
+  - Sotaro Fuchigami, **Toru Niina**, and Shoji Takada. JCTC (2020).
+  - :(fas fa-lock-open): bioRxiv: https://doi.org/10.1101/2020.03.12.988485
 - [**:(fas fa-lock-open): Molecular dynamics simulation of proton-transfer coupled rotations in ATP synthase FO motor**](https://doi.org/10.1038/s41598-020-65004-1)
-  - Shintaroh Kubo†, **Toru Niina†**, and Shoji Takada († equal contribution). Scientific Reports (2020).
+  - Shintaroh Kubo†, **Toru Niina†**, and Shoji Takada († **equal contribution**). Scientific Reports (2020).
   - :(fas fa-lock-open): bioRxiv: https://doi.org/10.1101/618504
 - [**:(fas fa-lock): Flexible Fitting of Biomolecular Structures to Atomic Force Microscopy Images via Biased Molecular Simulations**](https://doi.org/10.1021/acs.jctc.9b00991)
   - **Toru Niina**, Sotaro Fuchigami, and Shoji Takada. JCTC (2020).
@@ -23,7 +25,7 @@ lightgallery: true
 - [**:(fas fa-lock-open): DNA sliding in nucleosomes via twist defect propagation revealed by molecular simulations**](https://doi.org/10.1093/nar/gky158)
   - Giovanni B. Brandani, **Toru Niina**, Cheng Tan, and Shoji Takada. Nucleic Acids Research (2018).
 - [**:(fas fa-lock-open): Sequence-dependent nucleosome sliding in rotation-coupled and uncoupled modes revealed by molecular simulations**](https://doi.org/10.1371/journal.pcbi.1005880)
-  - **Toru Niina†**, Giovanni B. Brandani†, Cheng Tan, and Shoji Takada († equal contribution). PLoS Computational Biology (2017).
+  - **Toru Niina†**, Giovanni B. Brandani†, Cheng Tan, and Shoji Takada († **equal contribution**). PLoS Computational Biology (2017).
 
 ## ソフトウェア
 
