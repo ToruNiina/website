@@ -47,6 +47,7 @@ lightgallery: true
 
 ## その他
 
+- 学生支援機構 第一種奨学金 特に優れた業績により返済免除（全額）
 - 2014年度 QBiCスプリングコース2014 参加 (生化学シミュレーション研究チーム)
 - 2014年度 第8回KEKサマーチャレンジ 参加 (演習課題M04)
 - 2013年度 The International Genetically Engineered Machine competition (iGEM) 2013 銀賞 (Team Kyoto)
