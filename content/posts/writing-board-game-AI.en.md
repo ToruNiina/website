@@ -39,7 +39,7 @@ After all, AI always have time to play.
 
 So, three weeks ago, I wrote AI which can play the board game.
 Lately, I have been a bit busy, so I haven't had time to write this article.
-But now that I have have some time to spare, I'd like to share what I did.
+But now that I have some time to spare, I'd like to share what I did.
 
 ## Background: Rule of SEPARO
 
@@ -91,7 +91,7 @@ Of course, web pages are not free from the difference in environments either.
 There are several browsers, and sometimes the compatibility matters.
 But still, if we decide to keep a simple design, it is relatively easy (I think).
 
-When creating a web page as a GUI, the a natural choice for the implementation is javascript.
+When creating a web page as a GUI, a natural choice for the implementation is javascript.
 But since I'm not very familiar with javascript, I'd prefer to write all the components but the UI (i.e., AI and the rules of the game) in another language.
 Nowadays, the modern approach to connect javascript with other languages is to compile the code into webassembly.
 Thus, I decided to implement the game in Rust and compile it using wasm-pack.
@@ -196,7 +196,7 @@ Methods that obtain (often approximated) answers by repeating random sampling ar
 ### Monte Carlo Tree Search
 
 The accuracy of the approximation of the win rate depends on the quality of the simulation.
-If the players in the simulation make moves that are not chosen very often, the win rate would not be reliable.
+If the players in the simulation make moves that are not actually chosen very often by the real players, the win rate would not be reliable.
 Apparently, a random simulation is not so realistic, especially when playing against humans.
 
 To perform a more realistic simulation, we need to know which move is more likely to be chosen for each board state.
